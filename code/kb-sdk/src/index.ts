@@ -13,6 +13,10 @@ export { NotionMapper } from './adapters/notion/mapper';
 
 // Wolai 适配器
 export { WolaiAdapter, Client as WolaiClient } from './adapters/wolai/client';
+export { WolaiMapper } from './adapters/wolai/mapper';
+export { WolaiAPI } from './adapters/wolai/api';
+export type { WolaiAdapterConfig } from './adapters/wolai/client';
+export type { WolaiAPIConfig } from './adapters/wolai/api';
 
 // 语雀适配器
 export { YuqueAdapter, Client as YuqueClient } from './adapters/yuque/client';
