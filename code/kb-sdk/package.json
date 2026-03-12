@@ -1,0 +1,28 @@
+{
+  "name": "kb-sdk",
+  "version": "0.1.0",
+  "description": "Unified Knowledge Base SDK - Notion, Feishu, Yuque and more",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test dist/tests/*.test.js",
+    "test:ts": "tsx --test tests/*.test.ts",
+    "demo": "tsx demo/run-all.ts",
+    "demo:notion": "tsx demo/notion-demo.ts",
+    "demo:feishu": "tsx demo/feishu-demo.ts",
+    "demo:yuque": "tsx demo/yuque-demo.ts"
+  },
+  "keywords": ["notion", "feishu", "lark", "yuque", "knowledge-base", "sdk"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.7.0",
+    "typescript": "^5"
+  }
+}
